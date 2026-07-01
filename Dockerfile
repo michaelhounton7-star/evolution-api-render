@@ -1,3 +1,3 @@
-FROM evoapicloud/evolution-api:2.2.3
+FROM evoapicloud/evolution-api:latest
 
 CMD npx prisma migrate deploy && npm start
