@@ -1,5 +1,3 @@
-FROM evoapicloud/evolution-api:homolog
+FROM evoapicloud/evolution-api:2.2.3
 
-# Afficher la CMD d'origine puis migrer avant
-RUN echo "checking entrypoint"
 CMD npx prisma migrate deploy && npm start
